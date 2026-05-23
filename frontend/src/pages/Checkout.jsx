@@ -62,7 +62,7 @@ export default function Checkout({ cart = [], setCart }) {
     }
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/promocode/validate', {
+      const response = await fetch('https://burgerspot-api.onrender.com/api/promocode/validate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ export default function Checkout({ cart = [], setCart }) {
     };
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/orders', {
+      const response = await fetch('https://burgerspot-api.onrender.com/api/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

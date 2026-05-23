@@ -94,7 +94,7 @@ function App() {
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/products')
+    fetch('https://burgerspot-api.onrender.com/api/products')
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error(err));

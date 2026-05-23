@@ -76,7 +76,7 @@ export default function Admin() {
   const fetchOrders = () => {
     setOrdersLoading(true);
     setOrdersError(null);
-    fetch('http://localhost:5000/api/admin/orders')
+    fetch('https://burgerspot-api.onrender.com/api/admin/orders')
       .then(res => {
         if (!res.ok) throw new Error('Ошибка при загрузке заказов');
         return res.json();
@@ -93,7 +93,7 @@ export default function Admin() {
 
   const handleStatusChange = async (orderId, newStatus) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/orders/${orderId}`, {
+      const response = await fetch(`https://burgerspot-api.onrender.com/api/admin/orders/${orderId}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: newStatus }),
@@ -109,7 +109,7 @@ export default function Admin() {
   const confirmDeleteOrder = async () => {
     if (!orderToDelete) return;
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/orders/${orderToDelete._id}`, {
+      const response = await fetch(`https://burgerspot-api.onrender.com/api/admin/orders/${orderToDelete._id}`, {
         method: 'DELETE'
       });
       if (response.ok) {
@@ -124,7 +124,7 @@ export default function Admin() {
   const fetchProducts = () => {
     setProductsLoading(true);
     setProductsError(null);
-    fetch('http://localhost:5000/api/products')
+    fetch('https://burgerspot-api.onrender.com/api/products')
       .then(res => {
         if (!res.ok) throw new Error('Ошибка при загрузке меню');
         return res.json();
@@ -161,8 +161,8 @@ export default function Admin() {
   const handleProductSubmit = async (e) => {
     e.preventDefault();
     const url = editingProductId 
-      ? `http://localhost:5000/api/admin/products/${editingProductId}`
-      : 'http://localhost:5000/api/admin/products';
+      ? `https://burgerspot-api.onrender.com/api/admin/products/${editingProductId}`
+      : 'https://burgerspot-api.onrender.com/api/admin/products';
     const method = editingProductId ? 'PUT' : 'POST';
 
     try {
@@ -186,7 +186,7 @@ export default function Admin() {
   const handleDeleteProduct = async (productId) => {
     if (!window.confirm('Вы уверены, что хотите удалить это блюдо из меню?')) return;
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/products/${productId}`, {
+      const response = await fetch(`https://burgerspot-api.onrender.com/api/admin/products/${productId}`, {
         method: 'DELETE'
       });
       if (response.ok) {
@@ -200,7 +200,7 @@ export default function Admin() {
   const fetchPromocodes = () => {
     setPromocodesLoading(true);
     setPromocodesError(null);
-    fetch('http://localhost:5000/api/admin/promocodes')
+    fetch('https://burgerspot-api.onrender.com/api/admin/promocodes')
       .then(res => {
         if (!res.ok) throw new Error('Ошибка при загрузке промокодов');
         return res.json();
@@ -218,7 +218,7 @@ export default function Admin() {
   const handlePromoSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/admin/promocodes', {
+      const response = await fetch('https://burgerspot-api.onrender.com/api/admin/promocodes', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -243,7 +243,7 @@ export default function Admin() {
   const handleDeletePromo = async (code) => {
     if (!window.confirm(`Вы уверены, что хотите удалить промокод ${code}?`)) return;
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/promocodes/${code}`, {
+      const response = await fetch(`https://burgerspot-api.onrender.com/api/admin/promocodes/${code}`, {
         method: 'DELETE'
       });
       if (response.ok) {
