@@ -7,7 +7,6 @@ import Checkout from './pages/Checkout';
 import Admin from './pages/Admin';
 import About from './pages/About';
 
-// Создаем отдельный компонент для навигации, чтобы использовать useLocation
 function Navigation({ cart, theme, toggleTheme }) {
   const location = useLocation();
   const currentPath = location.pathname;
@@ -48,7 +47,6 @@ function Navigation({ cart, theme, toggleTheme }) {
           >
             О НАС
           </Link>
-          {/* Кнопка "АДМИНКА" удалена */}
         </div>
       </div>
 
