@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
 const CATEGORY_MAP = [
-  { id: 'BURGER', title: 'Бургеры' },
-  { id: 'FRIES', title: 'Картошка фри' },
-  { id: 'DRINK', title: 'Напитки' },
-  { id: 'SAUCE', title: 'Соусы' },
-  { id: 'DESSERT', title: 'Десерты' },
-  { id: 'COMBO', title: 'Комбо-обеды' },
-  { id: 'SNACK', title: 'Закуски' }
+  { id: 'burger', title: 'Бургеры' },
+  { id: 'fries', title: 'Картошка фри' },
+  { id: 'drinks', title: 'Напитки' },
+  { id: 'sauces', title: 'Соусы' },
+  { id: 'desserts', title: 'Десерты' },
+  { id: 'combo', title: 'Комбо-обеды' },
+  { id: 'snack', title: 'Закуски' }
 ];
 
 export default function Menu({ products = [], addToCart }) {
