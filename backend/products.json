@@ -1,0 +1,233 @@
+[
+  {
+    "_id": "b1",
+    "name": "Чизбургер",
+    "category": "burger",
+    "price": 289,
+    "description": "Говяжья котлета, сыр чеддер, маринованные огурцы и фирменный соус.",
+    "image": "https://img.magnific.com/free-photo/delicious-classic-cheeseburger-with-lettuce-melted-cheese_84443-72937.jpg",
+    "weight": 200,
+    "isAvailable": true,
+    "popularity": 10
+  },
+  {
+    "_id": "b2",
+    "name": "Бургер с беконом",
+    "category": "burger",
+    "price": 349,
+    "description": "Говяжья котлета, бекон, сыр чеддер и соус барбекю.",
+    "image": "https://img.magnific.com/free-psd/close-up-delicious-sandwich_23-2151872800.jpg",
+    "weight": 240,
+    "isAvailable": true,
+    "popularity": 12
+  },
+  {
+    "_id": "b3",
+    "name": "Двойной бургер",
+    "category": "burger",
+    "price": 429,
+    "description": "Две говяжьи котлеты, двойной сыр и фирменный соус.",
+    "image": "https://img.magnific.com/premium-photo/delicious-juicy-burger-isolated-white-background-fast-food_554439-36.jpg",
+    "weight": 320,
+    "isAvailable": true,
+    "popularity": 14
+  },
+  {
+    "_id": "b4",
+    "name": "Куриный бургер",
+    "category": "burger",
+    "price": 309,
+    "description": "Куриная котлета в панировке, салат и чесночный соус.",
+    "image": "https://img.magnific.com/premium-photo/chicken-burger-isolated-white-background_1235831-22050.jpg",
+    "weight": 230,
+    "isAvailable": true,
+    "popularity": 11
+  },
+  {
+    "_id": "b5",
+    "name": "Острый бургер",
+    "category": "burger",
+    "price": 369,
+    "description": "Говяжья котлета, халапеньо, сыр и острый соус.",
+    "image": "https://img.magnific.com/premium-photo/delicious-gourmet-burger-with-sesame-seed-bun-jalapenos-spicy-sauce_667286-12087.jpg",
+    "weight": 250,
+    "isAvailable": true,
+    "popularity": 9
+  },
+  {
+    "_id": "f1",
+    "name": "Картофель фри (S)",
+    "category": "fries",
+    "price": 99,
+    "description": "Хрустящий картофель фри с солью.",
+    "image": "https://img.magnific.com/premium-photo/french-fries-yellow-paper-bag-isolated-white-background_41158-28610.jpg",
+    "weight": 90,
+    "isAvailable": true,
+    "popularity": 8
+  },
+  {
+    "_id": "f2",
+    "name": "Картофель фри (M)",
+    "category": "fries",
+    "price": 129,
+    "description": "Средняя порция картофеля фри.",
+    "image": "https://img.magnific.com/premium-photo/french-fries-yellow-paper-bag-isolated-white-background_41158-28610.jpg",
+    "weight": 130,
+    "isAvailable": true,
+    "popularity": 10
+  },
+  {
+    "_id": "f3",
+    "name": "Картофель фри (L)",
+    "category": "fries",
+    "price": 159,
+    "description": "Большая порция картофеля фри.",
+    "image": "https://img.magnific.com/premium-photo/french-fries-yellow-paper-bag-isolated-white-background_41158-28610.jpg",
+    "weight": 170,
+    "isAvailable": true,
+    "popularity": 12
+  },
+  {
+    "_id": "f4",
+    "name": "Картофель по-деревенски",
+    "category": "fries",
+    "price": 179,
+    "description": "Картофельные дольки со специями.",
+    "image": "https://img.magnific.com/free-photo/fried-potato-wedges-isolated-white-background_123827-33306.jpg",
+    "weight": 180,
+    "isAvailable": true,
+    "popularity": 7
+  },
+  {
+    "_id": "d1",
+    "name": "Кола 0.5",
+    "category": "drink",
+    "price": 99,
+    "description": "Газированный прохладительный напиток.",
+    "image": "https://img.magnific.com/premium-photo/glass-cola-with-ice-isolated-white_392895-575796.jpg",
+    "weight": 500,
+    "isAvailable": true,
+    "popularity": 13
+  },
+  {
+    "_id": "d2",
+    "name": "Апельсиновый сок",
+    "category": "drink",
+    "price": 119,
+    "description": "Охлажденный апельсиновый сок.",
+    "image": "https://img.magnific.com/premium-photo/orange-juice-glass-with-orange-fruits-isolated-white-background-high-resolution-copy-space-healthy-vitamin-drink_205121-1317.jpg",
+    "weight": 300,
+    "isAvailable": true,
+    "popularity": 8
+  },
+  {
+    "_id": "d3",
+    "name": "Молочный коктейль",
+    "category": "drink",
+    "price": 299,
+    "description": "Сливочный молочный коктейль.",
+    "image": "https://img.magnific.com/premium-photo/chocolate-milk-shake-white-background_392895-452116.jpg",
+    "weight": 400,
+    "isAvailable": true,
+    "popularity": 11
+  },
+  {
+    "_id": "d4",
+    "name": "Минеральная вода",
+    "category": "drink",
+    "price": 79,
+    "description": "Негазированная питьевая вода.",
+    "image": "https://img.magnific.com/free-photo/plastic-bottle-water_23-2147795214.jpg",
+    "weight": 500,
+    "isAvailable": true,
+    "popularity": 5
+  },
+  {
+    "_id": "s1",
+    "name": "Сырный соус",
+    "category": "sauce",
+    "price": 49,
+    "description": "Классический сырный соус.",
+    "image": "https://img.magnific.com/free-photo/mashed-potatoes-white-bowl-isolated-white-background_123827-36535.jpg",
+    "weight": 30,
+    "isAvailable": true,
+    "popularity": 10
+  },
+  {
+    "_id": "s2",
+    "name": "Кетчуп",
+    "category": "sauce",
+    "price": 39,
+    "description": "Томатный соус.",
+    "image": "https://img.magnific.com/free-photo/homemade-tomato-soup-bowl-with-basil-copy-space_123827-36288.jpg",
+    "weight": 30,
+    "isAvailable": true,
+    "popularity": 9
+  },
+  {
+    "_id": "s3",
+    "name": "Барбекю соус",
+    "category": "sauce",
+    "price": 49,
+    "description": "Соус с копченым вкусом.",
+    "image": "https://img.magnific.com/premium-photo/close-up-strawberry-white-background_1598733-176.jpg",
+    "weight": 30,
+    "isAvailable": true,
+    "popularity": 7
+  },
+  {
+    "_id": "ds1",
+    "name": "Шоколадный маффин",
+    "category": "dessert",
+    "price": 129,
+    "description": "Мягкий шоколадный кекс.",
+    "image": "https://img.magnific.com/premium-photo/chocolate-muffin_548832-16528.jpg",
+    "weight": 100,
+    "isAvailable": true,
+    "popularity": 8
+  },
+  {
+    "_id": "ds2",
+    "name": "Чизкейк",
+    "category": "dessert",
+    "price": 179,
+    "description": "Классический сливочный чизкейк.",
+    "image": "https://img.magnific.com/free-photo/sweet-cheesecake-with-blueberries-isolated-white-background_123827-22850.jpg",
+    "weight": 120,
+    "isAvailable": true,
+    "popularity": 10
+  },
+  {
+    "_id": "ds3",
+    "name": "Мороженое",
+    "category": "dessert",
+    "price": 99,
+    "description": "Ванильное мороженое.",
+    "image": "https://img.magnific.com/premium-photo/pastel-ice-cream-cone_882191-3796.jpg",
+    "weight": 90,
+    "isAvailable": true,
+    "popularity": 9
+  },
+  {
+    "_id": "c1",
+    "name": "Комбо Перекус по-деревенски",
+    "category": "combo",
+    "price": 499,
+    "description": "Чизбургер, картофель по-деревенски и кетчуп.",
+    "image": "https://img.magnific.com/free-photo/burger-with-fries-ketchup-white-table_23-2148272994.jpg",
+    "weight": 750,
+    "isAvailable": true,
+    "popularity": 15
+  },
+  {
+    "_id": "c2",
+    "name": "Комбо Двойной на двоих",
+    "category": "combo",
+    "price": 599,
+    "description": "Два двойных бургера и картофель фри (S)",
+    "image": "https://img.magnific.com/premium-photo/fresh-tasty-burger-isolated_1339-76215.jpg",
+    "weight": 850,
+    "isAvailable": true,
+    "popularity": 13
+  }
+]

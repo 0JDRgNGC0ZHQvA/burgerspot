@@ -1,0 +1,10 @@
+[
+  {
+    "code": "BURGER20",
+    "type": "percent",
+    "value": 20,
+    "minOrderSum": 1000,
+    "expiresAt": "2027-04-26",
+    "isActive": true
+  }
+]

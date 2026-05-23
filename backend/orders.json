@@ -1,0 +1,64 @@
+[
+  {
+    "_id": "_u9wz8ht4p",
+    "customer": {
+      "name": "Вася",
+      "phone": "+78005553535",
+      "address": "Ул. Пушника, д. 10А",
+      "comment": ""
+    },
+    "items": [
+      {
+        "productId": "b1",
+        "name": "Чизбургер",
+        "price": 299,
+        "quantity": 1
+      }
+    ],
+    "total": 299,
+    "promocode": null,
+    "discount": 0,
+    "finalTotal": 299,
+    "deliveryMethod": "delivery",
+    "paymentMethod": "cash",
+    "status": "cooking",
+    "createdAt": "2026-05-21T11:52:58.211Z"
+  },
+  {
+    "_id": "_c7cdpdfdc",
+    "customer": {
+      "name": "Адам",
+      "phone": "89155340625",
+      "address": "ул. Пушкина, д. 13, кв. 42",
+      "comment": "Подъезд 1"
+    },
+    "items": [
+      {
+        "productId": "b2",
+        "name": "Бургер с беконом",
+        "price": 349,
+        "quantity": 2
+      },
+      {
+        "productId": "b3",
+        "name": "Двойной бургер",
+        "price": 429,
+        "quantity": 3
+      },
+      {
+        "productId": "b4",
+        "name": "Куриный бургер",
+        "price": 309,
+        "quantity": 1
+      }
+    ],
+    "total": 2294,
+    "promocode": "BURGER20",
+    "discount": 458.8,
+    "finalTotal": 1835.2,
+    "deliveryMethod": "delivery",
+    "paymentMethod": "card_online",
+    "status": "completed",
+    "createdAt": "2026-05-22T14:59:17.922Z"
+  }
+]
