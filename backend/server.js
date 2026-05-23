@@ -101,23 +101,32 @@ app.post('/api/orders', async (req, res) => {
     try {
         console.log('Пришел заказ:', req.body);
         
-        if (!Order) {
-            throw new Error('Модель Order не инициализирована!');
-        }
+        const { items, total, customerName, phone, address } = req.body;
 
-        const newOrder = new Order(req.body);
+        const orderData = {
+            items: items || [],
+            totalPrice: total || 0,
+            customerInfo: {
+                name: customerName || 'Не указано',
+                phone: phone || 'Не указан',
+                address: address || 'Не указан'
+            },
+            status: 'new'
+        };
+
+        const newOrder = new Order(orderData);
         await newOrder.save();
         
         res.status(201).json({ message: 'Заказ успешно оформлен!' });
     } catch (error) {
-        console.error('ОШИБКА ЗАКАЗА:', error.message, error.stack);
+        console.error('ОШИБКА ПРИ СОХРАНЕНИИ ЗАКАЗА:', error.message);
         res.status(500).json({ message: 'Ошибка сервера при заказе', details: error.message });
     }
 });
 
-
 app.get('/api/admin/orders', async (req, res) => {
     try {
+        console.log('ПРИШЛО С ФРОНТА:', req.body);
         const orders = await Order.find().sort({ createdAt: -1 });
         res.json(orders);
     } catch (error) {
