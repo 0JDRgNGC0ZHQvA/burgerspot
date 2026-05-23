@@ -30,15 +30,23 @@ app.get('/api/products', async (req, res) => {
             query.category = category;
         }
         if (search) {
-            query.name = { $regex: search, $options: 'i' }; // Поиск без учета регистра
+            query.name = { $regex: search, $options: 'i' };
         }
 
-        const products = await Product.find(query);
-        res.json(products);
+        const products = await Product.find(query).lean();
+        
+        const formattedProducts = products.map(p => ({
+            ...p,
+            _id: p._id.toString()
+        }));
+
+        res.json(formattedProducts || []); 
     } catch (error) {
-        res.status(500).json({ message: 'Ошибка при получении товаров', error });
+        console.error('Ошибка в GET /api/products:', error);
+        res.status(500).json({ message: 'Ошибка при получении товаров', error: error.message });
     }
 });
+
 
 app.get('/api/products/:id', async (req, res) => {
     try {
