@@ -99,30 +99,23 @@ app.delete('/api/admin/products/:id', async (req, res) => {
 
 app.post('/api/orders', async (req, res) => {
     try {
-        console.log('Пришел заказ:', req.body);
+        console.log('Пришел заказ с фронта:', req.body);
         
-        const { items, total, customerName, phone, address } = req.body;
-
         const orderData = {
-            items: items || [],
-            totalPrice: total || 0,
-            customerInfo: {
-                name: customerName || 'Не указано',
-                phone: phone || 'Не указан',
-                address: address || 'Не указан'
-            },
+            ...req.body,
             status: 'new'
         };
 
         const newOrder = new Order(orderData);
         await newOrder.save();
         
-        res.status(201).json({ message: 'Заказ успешно оформлен!' });
+        res.status(201).json({ message: 'Заказ успешно оформлен!', orderId: newOrder._id });
     } catch (error) {
         console.error('ОШИБКА ПРИ СОХРАНЕНИИ ЗАКАЗА:', error.message);
         res.status(500).json({ message: 'Ошибка сервера при заказе', details: error.message });
     }
 });
+
 
 app.get('/api/admin/orders', async (req, res) => {
     try {
@@ -224,11 +217,6 @@ app.post('/api/promocode/validate', async (req, res) => {
         res.status(500).json({ message: 'Ошибка при проверке промокода', error });
     }
 });
-
-app.post('/api/promocode/validate', (req, res) => {
-    res.json({ valid: false, message: 'Промокод не найден' });
-});
-
 
 app.listen(PORT, () => {
     console.log(`Сервер BurgerSpot запущен на порту ${PORT}`);
